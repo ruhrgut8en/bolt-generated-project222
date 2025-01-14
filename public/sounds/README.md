@@ -1,0 +1,15 @@
+Add the following sound files:
+- spin-start.mp3: Mechanical reel start sound
+- spin-stop.mp3: Mechanical reel stop sound
+- win-small.mp3: Small win celebration
+- win-medium.mp3: Medium win celebration
+- win-big.mp3: Big win celebration
+- scatter.mp3: Book scatter symbol sound
+- free-spins-trigger.mp3: Free spins activation
+- free-spins-win.mp3: Win during free spins
+- expanding.mp3: Symbol expansion sound
+- gamble-win.mp3: Gamble feature win
+- gamble-lose.mp3: Gamble feature lose
+- click.mp3: Button click sound
+- coins.mp3: Coins falling sound
+- ambient.mp3: Egyptian themed background music

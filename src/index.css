@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #0A0605;
+  color: #E8C086;
+  font-family: 'Cinzel', serif;
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 bg-[#C4973B] text-white rounded hover:bg-[#D6A84D] transition-colors;
+  }
+
+  .btn-secondary {
+    @apply px-4 py-2 bg-[#2A1810] text-[#E8C086] rounded hover:bg-[#3D2816] transition-colors;
+  }
+}

@@ -1,0 +1,100 @@
+/* Add to existing styles */
+
+/* Book symbol glow effect */
+.book-glow {
+  filter: drop-shadow(0 0 10px rgba(196, 151, 59, 0.5));
+}
+
+.book-rays {
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    rgba(196, 151, 59, 0.2) 90deg,
+    transparent 180deg
+  );
+}
+
+/* Win highlight effect */
+.win-highlight {
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.5) 0%,
+    transparent 70%
+  );
+}
+
+/* Big win effects */
+.big-win-container {
+  background: linear-gradient(45deg, #2A1810, #3D2816);
+  border: 2px solid #C4973B;
+  box-shadow: 0 0 20px rgba(196, 151, 59, 0.5);
+}
+
+.big-win-rays {
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    rgba(196, 151, 59, 0.3) 60deg,
+    transparent 120deg,
+    rgba(196, 151, 59, 0.3) 180deg,
+    transparent 240deg,
+    rgba(196, 151, 59, 0.3) 300deg,
+    transparent 360deg
+  );
+}
+
+.big-win-sparkles {
+  background-image: url('/effects/sparkles.png');
+  background-size: cover;
+  mix-blend-mode: screen;
+}
+
+/* Expanding symbol effect */
+.expanding-symbol {
+  animation: expand-vertical 0.5s ease-out forwards;
+}
+
+@keyframes expand-vertical {
+  0% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(3);
+  }
+  60% {
+    transform: scaleY(2.8);
+  }
+  100% {
+    transform: scaleY(3);
+  }
+}
+
+/* Payline animations */
+.payline {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw-line 2s linear infinite;
+}
+
+@keyframes draw-line {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Reel blur effect */
+.reel-blur {
+  animation: blur-spin 0.5s ease-in-out;
+}
+
+@keyframes blur-spin {
+  0% {
+    filter: blur(0);
+  }
+  50% {
+    filter: blur(4px);
+  }
+  100% {
+    filter: blur(0);
+  }
+}

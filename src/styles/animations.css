@@ -1,0 +1,70 @@
+@keyframes spin-blur {
+  0% {
+    transform: translateY(0);
+    filter: blur(0);
+  }
+  50% {
+    transform: translateY(-100%);
+    filter: blur(4px);
+  }
+  100% {
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes expand-symbol {
+  0% {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+@keyframes win-pulse {
+  0% {
+    transform: scale(1);
+    filter: brightness(1);
+  }
+  50% {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+  }
+  100% {
+    transform: scale(1);
+    filter: brightness(1);
+  }
+}
+
+@keyframes payline-flow {
+  0% {
+    stroke-dashoffset: 1000;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 0;
+  }
+}
+
+.animate-spin-blur {
+  animation: spin-blur 0.5s ease-in-out;
+}
+
+.animate-expand {
+  animation: expand-symbol 0.5s ease-out forwards;
+}
+
+.animate-win-pulse {
+  animation: win-pulse 1s ease-in-out infinite;
+}
+
+.animate-payline {
+  animation: payline-flow 2s linear infinite;
+}
